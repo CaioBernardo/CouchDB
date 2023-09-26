@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Ana Silva",
+        "occupation": "Teacher",
+        "street": "123 Main Street",
+        "neighborhood": "Downtown",
+        "city": "Florianópolis",
+        "state": "Santa Catarina",
+        "salary": 4500.00
+    },
+    {
+        "name": "Carlos Oliveira",
+        "occupation": "Engineer",
+        "street": "456 Elm Street",
+        "neighborhood": "Westside",
+        "city": "Joinville",
+        "state": "Santa Catarina",
+        "salary": 6000.00
+    },
+    {
+        "name": "Mariana Santos",
+        "occupation": "Nurse",
+        "street": "789 Oak Avenue",
+        "neighborhood": "East End",
+        "city": "Blumenau",
+        "state": "Santa Catarina",
+        "salary": 3800.00
+    },
+    {
+        "name": "Ricardo Lima",
+        "occupation": "Accountant",
+        "street": "101 Pine Road",
+        "neighborhood": "Northside",
+        "city": "Chapecó",
+        "state": "Santa Catarina",
+        "salary": 5200.00
+    },
+    {
+        "name": "Camila Pereira",
+        "occupation": "Graphic Designer",
+        "street": "222 Cedar Lane",
+        "neighborhood": "Central Park",
+        "city": "Criciúma",
+        "state": "Santa Catarina",
+        "salary": 4200.00
+    },
+    {
+        "name": "Eduardo Costa",
+        "occupation": "Doctor",
+        "street": "333 Maple Street",
+        "neighborhood": "Southside",
+        "city": "Lages",
+        "state": "Santa Catarina",
+        "salary": 7500.00
+    },
+    {
+        "name": "Luciana Ramos",
+        "occupation": "Software Developer",
+        "street": "444 Birch Drive",
+        "neighborhood": "Hillside",
+        "city": "Itajaí",
+        "state": "Santa Catarina",
+        "salary": 5800.00
+    },
+    {
+        "name": "Pedro Oliveira",
+        "occupation": "Chef",
+        "street": "555 Spruce Avenue",
+        "neighborhood": "Beachfront",
+        "city": "Balneário Camboriú",
+        "state": "Santa Catarina",
+        "salary": 4000.00
+    },
+    {
+        "name": "Isabela Fernandes",
+        "occupation": "Marketing Manager",
+        "street": "666 Pinecrest Road",
+        "neighborhood": "Ocean View",
+        "city": "Palhoça",
+        "state": "Santa Catarina",
+        "salary": 6200.00
+    },
+    {
+        "name": "Felipe Santos",
+        "occupation": "Electrician",
+        "street": "777 Redwood Lane",
+        "neighborhood": "Riverside",
+        "city": "Tubarão",
+        "state": "Santa Catarina",
+        "salary": 3500.00
+    },
+    {
+        "name": "Marina Alves",
+        "occupation": "Dentist",
+        "street": "888 Cedar Avenue",
+        "neighborhood": "Harborview",
+        "city": "São José",
+        "state": "Santa Catarina",
+        "salary": 6800.00
+    },
+    {
+        "name": "Gabriel Pereira",
+        "occupation": "Architect",
+        "street": "999 Elm Drive",
+        "neighborhood": "Hilltop",
+        "city": "Jaraguá do Sul",
+        "state": "Santa Catarina",
+        "salary": 5300.00
+    }
+]

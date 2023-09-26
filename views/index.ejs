@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../views/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>CouchDB CRUD</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todos Registros CouchDB</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Função</th>
+                    <th>Rua</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Salário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% topics.forEach(topic=> { %>
+                    <tr>
+                        <td>
+                            <%= topic.doc.name %>
+                        </td>
+                        <td>
+                            <%= topic.doc.occupation %>
+                        </td>
+                        <td>
+                            <%= topic.doc.street %>
+                        </td>
+                        <td>
+                            <%= topic.doc.neighborhood %>
+                        </td>
+                        <td>
+                            <%= topic.doc.city %>
+                        </td>
+                        <td>
+                            <%= topic.doc.state %>
+                        </td>
+                        <td>
+                            <%= topic.doc.salary %>
+                        </td>
+                        <td>
+                            <a href="/vedit/<%= topic.id %>" class="btn btn-warning">Editar</a>
+                            <a href="/delete/<%= topic.id %>" class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+
+        <h2>Criar </h2>
+        <hr>
+        <form method="post" action="/novo">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+
+                <label for="occupation" class="form-label">Função:</label>
+                <input type="text" id="occupation" name="occupation" class="form-control" required>
+
+                <label for="street" class="form-label">Rua:</label>
+                <input type="text" id="street" name="street" class="form-control" required>
+
+                <label for="neighborhood" class="form-label">Bairro:</label>
+                <input type="text" id="neighborhood" name="neighborhood" class="form-control" required>
+
+                <label for="city" class="form-label">Cidade:</label>
+                <input type="text" id="city" name="city" class="form-control" required>
+
+                <label for="state" class="form-label">Estado:</label>
+                <input type="text" id="state" name="state" class="form-control" required>
+
+                <label for="salary" class="form-label">Salário:</label>
+                <input type="number" id="salary" name="salary" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+        <hr>
+    </div>
+</body>
+
+</html>

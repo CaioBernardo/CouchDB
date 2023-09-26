@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Editar Registro</title>
+</head>
+
+<body>
+  
+  <form method="POST" action="/edit/<%= topic._id %>">
+
+    <div class="container">
+
+      <h1>Editar Registro</h1>
+      <hr>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome:</label>
+        <input type="text" id="name" name="name" class="form-control" value="<%= topic.name %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="occupation" class="form-label">Função:</label>
+        <input type="text" id="occupation" name="occupation" class="form-control" value="<%= topic.occupation %>"
+          required>
+      </div>
+
+      <div class="mb-3">
+        <label for="street" class="form-label">Rua:</label>
+        <input type="text" id="street" name="street" class="form-control" value="<%= topic.street %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="neighborhood" class="form-label">Bairro:</label>
+        <input type="text" id="neighborhood" name="neighborhood" class="form-control" value="<%= topic.neighborhood %>"
+          required>
+      </div>
+
+      <div class="mb-3">
+        <label for="city" class="form-label">Cidade:</label>
+        <input type="text" id="city" name="city" class="form-control" value="<%= topic.city %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="state" class="form-label">Estado:</label>
+        <input type="text" id="state" name="state" class="form-control" value="<%= topic.state %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="salary" class="form-label">Salário:</label>
+        <input type="number" id="salary" name="salary" class="form-control" value="<%= topic.salary %>" required>
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </div>
+      <hr>
+    </div>
+
+  </form>
+</body>
+
+</html>
